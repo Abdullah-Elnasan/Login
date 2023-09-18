@@ -1,0 +1,69 @@
+/* Google poppins font CDN Link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root{
+    --primary-font: 'Poppins' , sans-serif;
+    --light-white: #f5f8fa;
+    --gary: #5e6278;
+    --gary-1: #e3e3e3;
+}
+
+body{
+    font-family: var(--primary-font);
+    font-size: 14px;
+}
+
+/* Main CSS*/
+.wrapper{
+    padding: 0 0 100px;
+    background-image: url("/Image/BG.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+.wrapper .logo img{
+    max-width: 40%;
+}
+
+.wrapper input{
+    background-color: var(--light-white);
+    border-color: var(--light-white);
+    color: var(--gary);
+}
+.wrapper input:focus{
+    box-shadow: none;
+}
+
+.wrapper .submit_btn{
+    padding: 15px;
+    font-weight:500;
+}
+
+.wrapper .login_with{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    transform: 0.3s ease-in-out;
+}
+
+.wrapper .btn:focus,
+.wrapper .login_with:focus{
+    box-shadow: none;
+}
+
+.wrapper .login_with:hover{
+    background-color: var(--gary-1);
+    border-color: var(--gary-1);
+
+}
